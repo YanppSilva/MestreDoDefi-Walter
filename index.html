@@ -10,6 +10,13 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Analytics (Substitua 'YOUR_TRACKING_ID' pelo seu ID real) -->
     <script
       async
@@ -24,11 +31,11 @@
       gtag("config", "YOUR_TRACKING_ID");
     </script>
   </head>
+
   <body>
     <!-- Header -->
     <header>
       <div class="logo"><i class="bx bxl-bitcoin"></i>Cripto com Fé</div>
-      <button class="cta-button">Inscreva-se Agora</button>
     </header>
 
     <!-- Seção Hero -->
@@ -36,82 +43,41 @@
       <div>
         <div class="hero-content">
           <h1>Treinamento Mestre do <span>Defi 2.0</span></h1>
-          <p>
-            O <strong>Treinamento Mestre</strong> do <strong>Defi 2.0</strong> vai
-            acontecer dias
+          <p class="glass-effect">
+            O <strong>Treinamento Mestre</strong> do
+            <strong>Defi 2.0</strong> vai acontecer dias
             <strong>21 e 22 de Setembro (Sábado e Domingo)</strong>, Via Meet ao
             vivo e será gravado.
           </p>
-        </div>
-        <!-- Seção de Inscrição -->
-        <div id="#signup" class="signup">
-          <form
-            id="signup-form"
-            method="post"
-            action="https://formsubmit.co/yan.ppsilva@gmail.com"
-            >
-            <input
-                type="hidden"
-                name="_subject"
-                value="Nova Inscrição no Treinamento"
-            />
-            <input type="hidden" name="_next" value="obrigado.html" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required />
-            <span class="span-required nome" style="display: none; color: red"
-                >Nome deve ter no mínimo 3 caracteres.</span
-            >
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-            <span class="span-required email" style="display: none; color: red"
-                >Por favor, insira um email válido.</span
-            >
-
-            <label for="telegram">Usuário do Telegram:</label>
-            <input type="text" id="telegram" name="telegram" required />
-            <span class="span-required telegram" style="display: none; color: red"
-                >Usuário do Telegram deve ter no mínimo 3 caracteres.</span
-            >
-
-            <button type="button" id="validate-button">
-                Validar Informações
-            </button>
-            </form>
-            <a
-            class="cta-button"
+          <a
+            id="whatsapp-button"
             href="https://mpago.la/2JeXjdY"
-            id="signup-link"
-            class="cta-btn"
-            style="display: none"
             target="_blank"
-            >Finalizar Inscrição
-            </a>
+            ><button class="cta-button">Inscreva-se</button></a
+          >
         </div>
-        
-
-        <!-- Modal -->
         <div id="modal" class="modal">
-            <div class="modal-content">
+          <div class="modal-content">
             <span class="close">&times;</span>
-            <p id="modal-message"></p>
-            </div>
+            <p id="modal-message">
+              Após efetuar a compra pelo Mercado Pago, entre em contato enviando
+              os comprovantes para receber a documentação. Ao fechar este pop-up
+              você será redirecionado ao WhatsApp do Prof. Walter Silva.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Seção Sobre o Treinamento -->
-    <section class="about" id="about">
-      <h2>Sobre o Treinamento</h2>
+    <!-- Seção de Preços -->
+    <section class="section pricing" id="pricing">
+      <h2>Treinamento</h2>
       <p>
-        O Treinamento Mestre do Defi 2.0 vai acontecer dias 21 e 22 de Setembro
-        (Sábado e Domingo), Via Meet ao vivo e será gravado. Os participantes
+        O Treinamento Mestre do Defi 2.0 vai acontecer dias <strong>21 e 22 de Setembro
+        (Sábado e Domingo), Via Meet ao vivo e será gravado.</strong> Os participantes
         vão ter acesso a todo conteudo didático apresentado no treinamento.
         Teremos um grupo no Telegram exclusivo para dúvidas após o treinamento.
-        Serão 8 horas de imersão no universo do DEFI.
+        Serão 8 horas de <strong>imersão no universo do DEFI.</strong>
       </p>
       <h3>Principais Benefícios:</h3>
       <ul>
@@ -137,52 +103,87 @@
         </div>
         <div class="module">Módulo 4: Renda Passiva</div>
       </div>
-    </section>
-
-    <!-- Seção de Preços -->
-    <section class="pricing" id="pricing">
-      <h2>Treinamento</h2>
       <div class="pricing-table">
         <div class="pricing-card">
           <h3><span>Mestre do DEFI 2.0</span></h3>
           <p class="price">R$ 490,00</p>
           <p>Tudo do Avançado + Mentoria Personalizada</p>
-          <a href="#hero"><button class="cta-button">Inscreva-se</button></a>
+          <a href="https://mpago.la/2JeXjdY" target="_blank"
+            ><button class="cta-button">Inscreva-se</button></a
+          >
         </div>
       </div>
       <h2 class="pay-method">Formas de Pagamentos</h2>
+      <p>
+        Após o pagamento, independentemente do método utilizado, entre em
+        contato pelos nossos canais oficiais para comprovar o pagamento e nos
+        informar seu nome, e-mail e usuário do Telegram, a fim de que possamos
+        lhe entregar o conteúdo do treinamento.
+      </p>
+      <div class="faq-item">
+        <h4>Para pagamento via Cripto Rede Polygon</h4>
+        <div class="@">
+          <p>
+            <strong><span>91 USDT </span>-
+            0x7B81d869A238d453B7c54B7895b6B77D0DD8246e</strong>
+          </p>
+        </div>
+      </div>
       <div class="faq-item">
         <h4>Para pagamento via PIX</h4>
         <div class="answer">
           <p>criptocomfe@gmail.com</p>
         </div>
       </div>
-      <div class="faq-item">
-        <h4>Link para pagamento com cartão</h4>
-        <div class="answer">
-          <p>
-            <a
-              href="https://mpago.la/2JeXjdY
-            "
-              target="_blank"
-              >Mercado Pago - Prof. Walter Silva - Acadmia Cripto com Fé
-            </a>
-          </p>
-        </div>
+    </section>
+
+    <section class="section about">
+      <div class="about-img">
+        <img src="assets/sobre.png" />
       </div>
-      <div class="faq-item">
-        <h4>Para pagamento via Cripto Rede Polygon</h4>
-        <div class="answer">
-          <p>
-            <strong><span>91 USDT </span></strong>-
-            0x7B81d869A238d453B7c54B7895b6B77D0DD8246e
-          </p>
-        </div>
+      <div class="about-content">
+        <h2 class="heading">
+          Quem é o especialista que irá te <span>ensinar?</span>
+        </h2>
+        <h3>Prof. Walter Silva</h3>
+        <p>
+          <strong>Bacharel</strong> em <strong>Administração</strong> de
+          <strong>Empresas</strong> e <strong>Professor</strong> de Formação com
+          especialização em <strong>Educação Especial</strong>, Walter Silva
+          ingressou no mercado de investimentos em 2018 com ações e fundos
+          imobiliários. No mesmo ano conheceu o bitcoin, porém neste primeiro
+          momento não teve interesse de investir na criptomoeda pelo
+          "<strong>desconhecimento</strong>" e "preconceito" contra o mercado
+          cripto. Em <strong>2020</strong>, após conhecer todo o potencial de
+          crescimento do bitcoin e das criptomoedas, o "professor", como é
+          chamado por seus alunos da <strong>Academia Cripto Com Fe</strong>, se
+          apaixonou por esse mercado e atualmente é trader especialista em
+          Analise Gráfica e Finanças Descentralizadas onde atua e investe
+          diariamente.
+        </p>
+      </div>
+    </section>
+
+    <section class="section about">
+      <div class="about-content">
+        <h2 class="heading">DeFi é <span>para mim??</span></h2>
+        <h3>Sim!!</h3>
+        <p>
+          Você pode - e deve! - ser um investidor de criptomoedas e gerar
+          <strong>Renda Passiva todos os meses com o DeFi.</strong> Todos os
+          dias centenas de novos investidores estão mergulhando neste 'oceano
+          azul' das finanças descentralizadas e
+          <strong>VOCÊ PODE SER UM DELES!</strong> E eu quero te ajudar nessa
+          jornada. Conta comigo!
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="assets/interrogação.png" />
       </div>
     </section>
 
     <!-- Seção FAQ -->
-    <section class="faq" id="faq">
+    <section class="section faq" id="faq">
       <h2>Perguntas Frequentes</h2>
       <div class="faq-item">
         <h4>Como faço para me inscrever?</h4>
@@ -202,77 +203,11 @@
           </p>
         </div>
       </div>
-      <div class="faq-item">
-        <h4>O que está incluído no treinamento?</h4>
-        <div class="answer">
-          <p>
-            O treinamento inclui acesso a todos os módulos, materiais de apoio,
-            certificados e suporte aos alunos.
-          </p>
-        </div>
-      </div>
       <!-- Adicione mais FAQs conforme necessário -->
-    </section>
-
-      <!-- Seção de Inscrição -->
-      <section id="signup" class="signup">
-        <h2>Inscreva-se no Treinamento</h2>
-        <form
-          id="signup-form"
-          method="post"
-          action="https://formsubmit.co/yan.ppsilva@gmail.com"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="Nova Inscrição no Treinamento"
-          />
-          <input type="hidden" name="_next" value="obrigado.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required />
-          <span class="span-required nome" style="display: none; color: red"
-            >Nome deve ter no mínimo 3 caracteres.</span
-          >
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <span class="span-required email" style="display: none; color: red"
-            >Por favor, insira um email válido.</span
-          >
-
-          <label for="telegram">Usuário do Telegram:</label>
-          <input type="text" id="telegram" name="telegram" required />
-          <span class="span-required telegram" style="display: none; color: red"
-            >Usuário do Telegram deve ter no mínimo 3 caracteres.</span
-          >
-
-          <button type="button" id="validate-button">
-            Validar Informações
-          </button>
-        </form>
-        <a
-          class="cta-button"
-          href="https://mpago.la/2JeXjdY"
-          id="signup-link"
-          class="cta-btn"
-          style="display: none"
-          target="_blank"
-          >Finalizar Inscrição
-        </a>
-      </section>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <!-- Adicione mais ícones de redes sociais conforme necessário -->
-      </div>
       <p>
         Copyright &copy; 2024 by Cripto com Fé | Todos os Direitos Reservados.
       </p>
@@ -280,6 +215,9 @@
         Developed by
         <a href="https://www.linkedin.com/in/yanpablo/">Yan Pablo</a>
       </p>
+      <button id="scrollTopButton" class="scroll-top-button">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
     </footer>
 
     <!-- Botão de WhatsApp -->
@@ -289,8 +227,6 @@
     >
       <i class="fab fa-whatsapp"></i>
     </button>
-
-    <!-- Font Awesome para ícones (inclua no <head> ou antes do fechamento do <body>) -->
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"

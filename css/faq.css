@@ -1,0 +1,33 @@
+/* FAQ */
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item h4 {
+  cursor: pointer;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.faq-item h4::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active h4::after {
+  transform: rotate(45deg);
+}
+
+.faq-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .answer {
+  max-height: 200px;
+}
