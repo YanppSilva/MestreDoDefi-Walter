@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     closeModalBtn.addEventListener('click', function() {
       modal.style.display = 'none';
       // Após fechar o modal, redirecionar para o WhatsApp
-      window.location.href = 'https://wa.me/5585989197100';
+      window.location.href = 'https://wa.me/5585989197100', '_blank';
     });
   
     // Abrir modal ao clicar no botão
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (event.target === modal) {
         modal.style.display = 'none';
         // Redirecionar para o WhatsApp se o modal for fechado
-        window.location.href = 'https://wa.me/SEU_NUMERO_DE_WHATSAPP';
+        window.location.href = 'https://wa.me/5585989197100', '_blank';
       }
     });
   });

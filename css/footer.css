@@ -33,3 +33,33 @@ footer .social-icons a {
 footer .social-icons a:hover {
   color: var(--primary-color);
 }
+
+.home-content p {
+  font-size: 2rem;
+  width: 90%;
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+  padding: 1rem 0;
+}
+
+.social-media a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: .2rem solid var(--second-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--light-color);
+  transition: .4s ease;
+}
+
+.social-media a:hover {
+  color: var(--primary-color);
+}
+
+.developed {
+  color: var(--light-color);
+}

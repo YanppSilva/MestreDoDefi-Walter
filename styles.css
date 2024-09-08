@@ -250,7 +250,7 @@ span {
   .section.about {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .about-img img {
@@ -294,6 +294,10 @@ span {
 }
 
 @media (min-width: 1024px) {
+  .hero-content {
+    margin-left: 15%;
+  }
+  
   .section.about {
     padding: 40px;
   }
